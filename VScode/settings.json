@@ -1,0 +1,29 @@
+{
+  "workbench.enableExperiments": false,
+  "update.mode": "manual",
+  "update.showReleaseNotes": false,
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "editor.fontSize": 20,
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "'Fira Code'",
+  "workbench.colorTheme": "Default High Contrast",
+  "editor.fontLigatures": false,
+  "workbench.startupEditor": "none",
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootPath}${separator}${profileName}${separator}${appName}",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "workbench.activityBar.visible": false,
+  "editor.tabSize": 3,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "workbench.sideBar.location": "right",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.addMissingImports": true 
+  },
+  "[prisma]": {
+    "editor.formatOnSave": true
+  }"
+}
