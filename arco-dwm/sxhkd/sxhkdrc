@@ -1,0 +1,149 @@
+#################################################################
+# KEYBOARD BINDINGS FOR ANY TWM
+#################################################################
+
+#################################################################
+# SUPER + FUNCTION KEYS
+#################################################################
+
+#Virtualbox
+super + F7
+    virtualbox
+
+super + F1
+    $HOME/Applications/Insomnia.Core-2022.7.5.AppImage
+
+super + F2
+    $HOME/Applications/Beekeeper-Studio-3.8.9.AppImage
+
+#################################################################
+# SUPER + ... KEYS
+#################################################################
+
+#Screenshot
+super + s
+    coreshot -w
+
+#Archwiki
+super + a
+    $HOME/.local/bin/archwiki
+
+#Emacs
+super + e
+    emacs
+
+#Browser
+super + w
+    wireshark
+
+#archlinux-logout
+super + x
+    archlinux-logout
+
+#Codium
+super + v
+    vscodium
+
+#alacritty
+super + Return
+    alacritty
+
+#Xkill
+super + Escape
+    xkill
+
+#Keyboard dependent
+#alacritty
+super + KP_Enter
+
+
+#################################################################
+# SUPER + SHIFT KEYS
+#################################################################
+#Rofi-bluetooth
+super + shift + b
+	rofi-bluetooth
+
+#File-Manager
+super + shift + Return
+    pcmanfm
+
+#reload sxhkd:
+super + shift + s
+	pkill -USR1 -x sxhkd
+
+#save bookmark in browser
+super + shift + c
+	echo -e "\n<p></p>\n <a target='_blank' href="`xclip -o`">`xclip -o` </a>" >> $HOME/toolkit/bookmarks.html
+
+#dmenu script to watch videos
+super + shift + p
+	pcmanfm
+
+#htop
+super + shift + h
+	alacritty -e htop
+
+#################################################################
+# CONTROL + ALT KEYS
+#################################################################
+
+#DBeaver
+ctrl + alt + d
+    flatpak run io.dbeaver.DBeaverCommunity
+
+#Qutebrowser
+ctrl + alt + v
+    /usr/bin/qutebrowser
+
+#Catfish
+ctrl + alt + c
+     catfish
+
+#Firefox
+ctrl + alt + f
+    firefox
+
+#Rofi-power-menu
+ctrl + alt + p
+    rofi -show power-menu -modi power-menu:rofi-power-menu
+
+#Xfce4-settings-manager
+ctrl + alt + m
+     xfce4-settings-manager
+
+#st
+ctrl + alt + Return
+    st
+
+#alacritty
+ctrl + alt + t
+    alacritty
+
+#previous
+XF86AudioPrev
+    playerctl previous
+
+#Stop
+XF86AudioStop
+    playerctl stop
+
+#Brightness up
+XF86MonBrightnessUp
+    brightnessctl set 10+
+
+#Brightness down
+XF86MonBrightnessDown
+    brightnessctl set 10-
+
+#VolumeUp
+XF86AudioRaiseVolume
+    pamixer -i 5
+
+#VolumeDown
+XF86AudioLowerVolume
+    pamixer -d 5
+
+#VolumeOn/Off
+XF86AudioMute
+    pamixer -q set Master toggle
