@@ -31,7 +31,7 @@ export HISTCONTROL=ignoreboth:erasedups
 export EDITOR='nvim'
 export VISUAL='nvim'
 
-#PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$'
 
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
